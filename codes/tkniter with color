@@ -1,0 +1,40 @@
+import tkinter as tk
+clicks = 0
+def exit_application():
+    root.destroy()
+
+def change_button_text():
+    global clicks
+    clicks += 1
+    root.configure(bg="#E62C2E")
+    
+      
+    if clicks == 1:
+        change_text_button["text"] = "Okay no more pressing or i'll molest you 💀"
+        root.configure(bg="##0F0F0F")
+        root.after(6000, exit_application)
+    if clicks == 2:
+        change_text_button["text"] = "Don't press again or you may Die 🤡"
+        root.configure(bg="black") 
+    elif clicks == 3:
+        change_text_button["text"] = "Giving you a warning, I'll leak all of you data 😏" 
+        root.configure(bg="#69CC41")
+    elif clicks == 4:
+        change_text_button["text"] = "Told ya, now Let me get you data, hehe 🥰" 
+        root.configure(bg="#DC53C3")
+        root.after(3000, exit_application)
+
+root = tk.Tk()
+root.title("Button Text Changes")  
+root.configure(bg="#E2EC23")
+root.geometry("720x480")
+
+
+exit_button = tk.Button(root, text="Dont press me 😠", command=exit_application)
+exit_button.pack()
+
+
+change_text_button = tk.Button(root, text="You can press me ;)", command=change_button_text)
+change_text_button.pack()
+
+root.mainloop()

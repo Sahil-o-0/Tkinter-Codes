@@ -1,0 +1,8 @@
+import tkinter as tk
+
+# Create the main window
+root = tk.Tk()
+root.title("Motion and Sound Detection UI")
+
+# Start the event loop (keep the window running)
+root.mainloop()
