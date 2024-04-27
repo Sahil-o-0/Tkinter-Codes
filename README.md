@@ -1,3 +1,3 @@
 # Tkinter-Codes
 
-You can learn about tkinter from here, as its a basic problems of tkinter wo interact with button
+You can learn about Tkinter from here, as its basic problems of tkinter to interact with the buttons
